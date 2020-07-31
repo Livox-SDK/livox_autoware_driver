@@ -17,9 +17,9 @@ To install livox_autoware_driver, we strongly recommend using [Docker Method](ht
     git clone https://github.com/Livox-SDK/livox_autoware_driver.git
     ```
 - Build the Docker Image: 
-    > ***NOTE:*** If you don't need nvidia cuda surpport, please set 'FROM' command in [Dockerfile](https://github.com/Livox-SDK/livox_autoware_driver/blob/master/Dockerfile) to:  
+    > ***NOTE:*** If you don't need nvidia cuda surpport, please set 'FROM' command in [Dockerfile](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/Dockerfile#L1) to:  
     > `FROM autoware/autoware:latest-melodic`  
-    > And set the `CUDA="on"` option in [run_livox.sh](https://github.com/Livox-SDK/livox_autoware_driver/blob/master/run_livox.sh) to:  
+    > And set the `CUDA="on"` option in [run_livox.sh](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/run_livox.sh#L6) to:  
     > `CUDA="off"`
 
      ```
@@ -105,7 +105,7 @@ To install livox_autoware_driver, we strongly recommend using [Docker Method](ht
     > 1. The number of 'lidars' **must** be set equal to the number of lidars inserted into the livox hub.
     > 2. Multiple lidars must be inserted into hub slots in the order of 1, 2, 3..., and the slot number cannot be interrupted.
     > 3. If 'extrinsic' is not set, the extrinsic parameter of each lidar will be set to 'Identity' by default.
-    > 4. An extrinsic config file should in the same format as [livox_autoware_driver/livox_ros_driver/config/extrinsic.csv](https://github.com/Livox-SDK/livox_autoware_driver/blob/master/livox_ros_driver/config/extrinsic.csv): the first row represents the parameter of the lidar inserted into the first hub slot and is arranged in the format of "roll, pitch, yaw, x, y, z,". The other lines are the same as the first line.
+    > 4. An extrinsic config file should in the same format as [livox_autoware_driver/livox_ros_driver/config/extrinsic.csv](https://github.com/Livox-SDK/livox_autoware_driver/blob/master/livox_ros_driver/config/extrinsic.csv): the first row represents the parameter of the lidar inserted into the first hub slot and is arranged in the format of "roll, pitch, yaw, x, y, z,". The other rows are the same as the first row.
 
     <div align="left">
         <img src="images/config_livox_hub.png" width = 50% >
