@@ -17,10 +17,10 @@ To install livox_autoware_driver, we strongly recommend using [Docker Method](ht
     git clone https://github.com/Livox-SDK/livox_autoware_driver.git
     ```
 - Build the Docker Image: 
-    > ***NOTE:*** If you don't need nvidia cuda surpport, please set 'FROM' command in [Dockerfile](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/Dockerfile#L1) to:  
-    > `FROM autoware/autoware:latest-melodic`  
-    > And set the `CUDA="on"` option in [run_livox.sh](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/run_livox.sh#L6) to:  
-    > `CUDA="off"`
+    > ***NOTE:*** If you need nvidia cuda surpport, please set 'FROM' command in [Dockerfile](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/Dockerfile#L1) to:  
+    > `FROM autoware/autoware:latest-melodic-cuda`  
+    > And set the `CUDA="off"` option in [run_livox.sh](https://github.com/Livox-SDK/livox_autoware_driver/blob/7db5ae3c18001abcefd264108ad1fe184b6f278e/run_livox.sh#L6) to:  
+    > `CUDA="on"`
 
      ```
      cd ~/livox_autoware_ws/livox_autoware_driver/

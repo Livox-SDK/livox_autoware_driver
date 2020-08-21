@@ -9,6 +9,7 @@ cmake_minimum_required(VERSION 3.0)
 include(cmake/version.cmake)
 project(livox_ros_driver VERSION ${LIVOX_ROS_DRIVER_VERSION} LANGUAGES CXX)
 message(STATUS "livox_ros_driver version: ${LIVOX_ROS_DRIVER_VERSION}")
+set(CMAKE_BUILD_TYPE "Release")
 
 #---------------------------------------------------------------------------------------
 # find package and the dependecy

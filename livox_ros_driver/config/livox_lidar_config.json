@@ -1,22 +1,22 @@
 {
     "lidar_config": [
         {
-            "broadcast_code": "0T9DFBC00401611",
+            "broadcast_code": "1PQDH5B00100041",
             "enable_connect": false,
-            "enable_fan": true,
             "return_mode": 0,
             "coordinate": 0,
-            "imu_rate": 1,
-            "extrinsic_parameter_source": 0
+            "imu_rate": 0,
+            "extrinsic_parameter_source": 0,
+            "enable_high_sensitivity": false
         },
         {
             "broadcast_code": "0TFDG3U99101431",
             "enable_connect": false,
-            "enable_fan": true,
             "return_mode": 0,
             "coordinate": 0,
-            "imu_rate": 1,
-            "extrinsic_parameter_source": 0
+            "imu_rate": 0,
+            "extrinsic_parameter_source": 0,
+            "enable_high_sensitivity": false
         }
     ],
 	

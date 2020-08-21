@@ -3,7 +3,7 @@
 set -e
 
 # Default settings
-CUDA="on"
+CUDA="off"
 IMAGE_NAME="autoware/livox"
 TAG_PREFIX="latest"
 ROS_DISTRO="melodic"

@@ -1,4 +1,4 @@
-FROM autoware/autoware:latest-melodic-cuda
+FROM autoware/autoware:latest-melodic
 
 ENV USERNAME autoware
 
