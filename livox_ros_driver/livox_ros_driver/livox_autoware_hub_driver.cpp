@@ -98,7 +98,7 @@ void hubCallBack(const livox_ros_driver::CustomMsgConstPtr &msg){
     firstID = lidar_id;
     firstTime = msg->header.stamp;
     for(const auto & point : msg->points){
-      if(point.x < 1.0) continue;
+      //if(point.x < 1.0) continue;
       eig_p.x() = point.x;
       eig_p.y() = point.y;
       eig_p.z() = point.z;
@@ -118,7 +118,7 @@ void hubCallBack(const livox_ros_driver::CustomMsgConstPtr &msg){
   if(abs(msg->header.stamp.toSec() - firstTime.toSec()) <= 0.08 && lidar_id != firstID)
   {
     for(const auto & point : msg->points){
-      if(point.x < 1.0) continue;
+      //if(point.x < 1.0) continue;
       eig_p.x() = point.x;
       eig_p.y() = point.y;
       eig_p.z() = point.z;
