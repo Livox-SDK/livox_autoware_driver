@@ -6,7 +6,8 @@ livox_autoware_driver is modified on the basis of [livox_ros_driver](https://git
 
 ## Installation
 
-To install livox_autoware_driver, we strongly recommend using [Docker Method](https://github.com/Livox-SDK/livox_autoware_driver#1-install-from-docker). Otherwise, you can install it from source by following the [Source Method](https://github.com/Livox-SDK/livox_autoware_driver#2-install-from-source).
+To install livox_autoware_driver, we **strongly** recommend using [Docker Method](https://github.com/Livox-SDK/livox_autoware_driver#1-install-from-docker). Otherwise, you can install it from source by following the [Source Method](https://github.com/Livox-SDK/livox_autoware_driver#2-install-from-source).   
+***NOTE:*** Docker Method has higher stability， because different system environments may cause the Source Method to fail.
 
 ### 1. Install from Docker
 
